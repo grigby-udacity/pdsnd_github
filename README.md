@@ -25,4 +25,7 @@ Code finished by G Rigby.
 by submitting a pull request with a detailed description of the proposed changes.
 describe the purpose of change or addition and indicate how the changes were tested.
 
+Your pull request / changes will be reviewed by one of the persons in charge of maintaining 
+this project.
+
 
