@@ -2,6 +2,7 @@
 
 ### Project Title
 Bikeshare Rental Service Data Exploration
+This is classroom exercize for Udacity Nanodegree program
 
 ### Description
 This project explores data on bicycle rentals for the company BikeShare in (3) cities
@@ -19,5 +20,9 @@ new_york_city.csv
 ### Credits
 Initial Project developed by Udacity as a Class project
 Code finished by G Rigby.
+
+### Developers Can Help with tis project
+by submitting a pull request with a detailed description of the proposed changes.
+describe the purpose of change or addition and indicate how the changes were tested.
 
 
