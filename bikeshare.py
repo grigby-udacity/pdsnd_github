@@ -17,11 +17,9 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    print('please make input match a choice in the lists provided.  ')
-    print()
+    print('please make input match a choice in the lists provided.  \n')
     print('Please input the city name for the data to be explored: ')  
-    city=input('Type a name from this list: chicago, washington or new york city:  ').lower()
-    print()
+    city=input('Type a name from this list: chicago, washington or new york city:  \n').lower()
     print('Please input the month name for the data to be explored: ') 
     month=input('Type a month from this list: :(all, january, february,march april, may, june:  ').lower()
     day=input('Enter the Day of week to investigate (all, monday, tuesday, wednsday,thursday, friday, saturday, sunday:  ').lower()
@@ -141,15 +139,14 @@ def station_stats(df):
     print('The most popular starting station for trips is:'  )
     start_sta =(df['Start Station'].value_counts())
     start_sta_max = start_sta.nlargest(1)
-    print(start_sta_max.index.values)
-    print()
+    print(start_sta_max.index.values,'\n')
     
     # display most commonly used end station
     print('The most popular ending station for trips is:'  )
     end_sta =(df['End Station'].value_counts())
     end_sta_max = end_sta.nlargest(1)
-    print(end_sta_max.index.values)
-    print()
+    print(end_sta_max.index.values, '\n')
+    #print()
     
     # display most frequent combination of start station and end station trip
     trip_ends =(df['trip'].value_counts())
@@ -187,8 +184,8 @@ def user_stats(df,city):
     # Display counts of user types
     user_tipes =(df['User Type'].value_counts())
     print('Counts of User Categories')
-    print(user_tipes)
-    print()
+    print(user_tipes,'\n')
+
     #washington has no columns for Gender nor Birth Year in DFrame
     if city != 'washington':
         # Display counts of gender
@@ -208,10 +205,11 @@ def user_stats(df,city):
    
 def see_raw_data(df):
     """Displays 5 rows of raw data upon user request."""
+    start_time = time.time()
     print('see raw data')
-    see_rawd=input('Do you wish to see 5 lines of the original data?: enter yes or no?:  ')
+    see_rawd=input('Do you wish to see 10 lines of the original data?: enter yes or no?:  ')
     if see_rawd =='yes':
-        print(df.head())
+        print(df.head(10))
     else:
         print('ok- no raw data will be displayed')
     
