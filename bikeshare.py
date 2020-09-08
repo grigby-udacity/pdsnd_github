@@ -205,10 +205,11 @@ def user_stats(df,city):
    
 def see_raw_data(df):
     """Displays 5 rows of raw data upon user request."""
+    start_time = time.time()
     print('see raw data')
-    see_rawd=input('Do you wish to see 5 lines of the original data?: enter yes or no?:  ')
+    see_rawd=input('Do you wish to see 10 lines of the original data?: enter yes or no?:  ')
     if see_rawd =='yes':
-        print(df.head())
+        print(df.head(10))
     else:
         print('ok- no raw data will be displayed')
     
